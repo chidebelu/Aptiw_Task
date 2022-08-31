@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app__form{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 50px 0 50px 0 ;
+    background: none;
+    border: none;
+}
+
+.app__form__input input{
+    width: 50%;
+    height: 5vh;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    outline: none;
+    margin-bottom: 50px;
+    color: rgb(44, 44, 132);
+}
+
+.app__submit-btn{
+    text-align: center;
+    
+}
+
+.app__submit-btn input{
+    color: white;
+    background-color: rgb(31, 160, 31);
+    padding: 0.5rem;
+    width: 8%;
+    margin: auto;
+    border-radius: 5px;
+    border: none;
+}
+
+.app__submit-btn-2 input{
+    color: white;
+    background-color: rgb(26, 119, 26);
+    padding: 0.7rem;
+    width: 6%;
+    margin: auto;
+    border-radius: 5px;
+    border: none;
+}
+
+
+

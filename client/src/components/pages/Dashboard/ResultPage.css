@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app__ResultPage-container{
+    margin: 35px 0 0 40px
+}
+
+.app__ResultPage-form{
+    text-align: center;
+    display: inline;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    margin: 50px 0 50px 0 ;
+    background: none;
+    border: none;
+}
+
+.app__form__ResultPage input{
+    width: 70%;
+    height: 5vh;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    outline: none;
+    margin-bottom: 50px;
+    color: rgb(44, 44, 132);
+}
+
+.app__ResultPage-submit-btn{
+    text-align: center;
+    
+}
+
+.app__ResultPage-submit-btn input{
+    color: white;
+    background-color: rgb(31, 160, 31);
+    padding: 0.5rem;
+    width: 8%;
+    margin: auto;
+    border-radius: 5px;
+    border: none;
+}
+
+.app__ResultPage-submit-btn-2 input{
+    color: white;
+    background-color: rgb(26, 119, 26);
+    padding: 0.7rem;
+    width: 6%;
+    margin: auto;
+    border-radius: 5px;
+    border: none;
+}
+
+.app__addtofavourites p{
+    background: rgb(220, 220, 220);
+    width: 10%;
+    border: 1px solid black;
+    margin: 100px 0 ;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.app__addtofavourites{
+    width: 100%;
+    text-align: center;
+    
+}
+
+.app__ResultPage-definitions-Synonyms{
+    color: blue;
+    text-decoration: underline;
+}
+

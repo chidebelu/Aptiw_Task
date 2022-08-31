@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app__navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: rgb(239, 254, 213);
+    padding: 2rem;
+    border: 2px solid black;
+    margin: 1rem 0 0 0;
+}
+
+.app__navbar-logo{
+    flex-basis: 5%;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 20px 0 0;
+}
+
+.app__navbar-link{
+    flex-basis: 78%;
+    justify-content: left;
+    align-items: center;
+    list-style: none;
+}
+
+.app__navbar-link li a{
+    color: blue;
+}
+
+.app__navbar-signup a{
+    flex-basis: 8%;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.7rem 1.5rem;
+    background: rgba(59, 108, 206, 0.989);
+    color: white;
+    text-decoration: none;
+    border-radius: 5%;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.app__navbar-signup a:hover{
+    border: none;
+    background: rgba(106, 149, 237, 0.989);
+    box-shadow: 0px 0px 1px #777;
+}
+
+.app__navbar-login a{
+    flex-basis: 9%;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.7rem 1.5rem;
+    background: rgba(59, 108, 206, 0.989);
+    color: white;
+    text-decoration: none;
+    border-radius: 5%;
+    margin: 15px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.app__navbar-login a:hover{
+    border: none;
+    background: rgba(106, 149, 237, 0.989);
+    box-shadow: 0px 0px 1px #777;
+}
+
+.app__navbar-user-image img{
+    border-radius: 50%;
+    width: 110%;
+    height: 8vh;
+    border: 2px solid black;
+
+}
+
+.app__navbar-user-name h3{
+    margin: 0 0 0 30px;
+}
+
+.app__submit-btn{
+    margin:0 0 0 40px;
+    justify-content: center;
+}
+
