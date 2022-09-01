@@ -22,7 +22,7 @@
 }
 
 .app__navbar-link{
-    flex-basis: 78%;
+    flex-basis: 70%;
     justify-content: left;
     align-items: center;
     list-style: none;
@@ -88,3 +88,18 @@
     justify-content: center;
 }
 
+.app__navbar-user-logout input{
+    /* flex-basis: 9%; */
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.7rem;
+    background: rgba(59, 108, 206, 0.989);
+    color: white;
+    text-decoration: none;
+    border-radius: 5%;
+    margin: 15px;
+    cursor: pointer;
+    width: 35%;
+    border: none;
+   
+}

@@ -3,9 +3,10 @@ import Home from './components/pages/Home/Home'
 import {BrowserRouter, Switch, Route} from "react-router-dom"
 import Login from "./components/pages/Login/Login"
 import Signup from './components/pages/Signup/Signup'
-import ResultPage from './components/pages/Dashboard/ResultPage'
+import ResultPage from './components/pages/ResultPage/ResultPage'
 import FavouritePage from './components/pages/FavouritePage/FavouritePage'
 import AuthState from "./context/auth/AuthState"
+import Dashboard from './components/pages/Dashboard/Dashboard'
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
       <Route path="/signup" exact component={Signup}/>
       <Route path="/resultPage" exact component={ResultPage}/>
       <Route path="/favourites" exact component={FavouritePage}/>
+      <Route path="/dashboard" exact component={Dashboard}/>
     </Switch>
     </AuthState>
   </BrowserRouter>

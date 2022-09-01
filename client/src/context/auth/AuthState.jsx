@@ -29,7 +29,7 @@ const AuthState = props =>{
         if(localStorage.token){
             setAuthToken(localStorage.token)
             try{
-                const response = await axios.get("/api/users/profile")
+                const response = await axios.get("/profile")
                 dispatch({
                     type: USER_LOADED,
                     payload: response.data
@@ -59,7 +59,7 @@ const AuthState = props =>{
                 type: REGISTRATION_SUCCESS,
                 payload: response.data
             })
-          
+        //   loaduser()
         }
         catch(err){
             dispatch({
@@ -84,11 +84,12 @@ const AuthState = props =>{
         }
         try{
             const response = await axios.post("/login", user, config)
-            
             dispatch({
                 type: LOGIN_SUCCESS,
                 payload: response.data
             })
+
+            // loaduser()
            
         }
         catch(err){
@@ -221,6 +222,7 @@ const AuthState = props =>{
                     }
 
                     const removeFavourite = async (id) =>{
+                        
                         dispatch({
                             type: REMOVE_FAVOURITE_REQUEST,
                         })

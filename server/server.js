@@ -91,6 +91,7 @@ app.get('/get-favorites', async (req, res) => {
 });
 
 app.delete('/remove-favorite/:id', async (req, res) => {
+  console.log(req.params.id)
   try {
     if (!req.params?.id) {
       return res.status(400).send('Id of the word is required');
@@ -103,6 +104,17 @@ app.delete('/remove-favorite/:id', async (req, res) => {
   }
 });
 
+
+// app.get("/profile", async (req, res) => {
+//   let user = await User.findById(req.user.id).select('-password');
+//   if (user) {
+//     user = user.toObject();
+//     res.json(user);
+//   } else {
+//     res.status(404);
+//     throw new Error('User Not Found');
+//   }
+// });
 
 
 app.post("/login", async (req, res) => {

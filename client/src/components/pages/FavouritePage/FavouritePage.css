@@ -43,6 +43,7 @@
     float: right;
     color: black;
     display: none;
+    cursor: pointer;
 }
 
 .app__favourite-page-content:hover .app__favourite-page-content-span{

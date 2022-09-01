@@ -3,7 +3,7 @@ import { REGISTRATION_FAIL,LOGIN_SUCCESS, LOGIN_FAIL, LOGIN_REQUEST,
         SEARCH_FAIL, SEARCH_SUCCESS,  GET_FAVOURITE_REQUEST, GET_FAVOURITE_SUCCESS, GET_FAVOURITE_FAIL,
         ADD_FAVOURITE_REQUEST, ADD_FAVOURITE_SUCCESS,  ADD_FAVOURITE_FAIL, 
         GET_FAVOURITES_REQUEST, GET_FAVOURITES_SUCCESS, GET_FAVOURITES_FAIL,
-        REMOVE_FAVOURITE_REQUEST, REMOVE_FAVOURITE_SUCCESS, REMOVE_FAVOURITE_FAIL } from "../../constants"
+        REMOVE_FAVOURITE_REQUEST, REMOVE_FAVOURITE_SUCCESS, REMOVE_FAVOURITE_FAIL, USER_LOADED } from "../../constants"
 
 const reducer = (state, action) =>{
     switch(action.type){
@@ -26,7 +26,8 @@ const reducer = (state, action) =>{
                 ...state,
                 ...action.payload,
                 isAuthenticated: true,
-                loading: false
+                loading: false,
+                user:action.payload
             } 
 
             case LOGOUT:
@@ -97,6 +98,13 @@ const reducer = (state, action) =>{
                             ...state,
                              getfavourites: null
                         }
+            case USER_LOADED :
+                return{
+            ...state,
+            isAuthenticated: true,
+            loading:false,
+            user: action.payload
+        }
 
         default: return state
     }

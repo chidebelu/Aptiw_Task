@@ -4,6 +4,7 @@ import jwt from 'jsonwebtoken';
 import crypto from 'crypto';
 
 const userSchema = mongoose.Schema(
+   
   {
     firstname: {
       type: String,

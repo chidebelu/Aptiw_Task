@@ -6,11 +6,13 @@ import authContext from '../../../context/auth/authContext';
 
 const Navbar = () => {
   const context = useContext(authContext)
-  const {isAuthenticated, user, loaduser} = context
-  useEffect(()=>{
-    loaduser()
-    //eslint-disable-next-line
-  },[])
+  const {isAuthenticated, user, logout} = context
+  const onClick = (e) =>{
+    e.preventDefault()
+    logout()
+  }
+  console.log(user)
+
   const loggedIn = (
     <>
     <nav className='app__navbar'>
@@ -24,7 +26,10 @@ const Navbar = () => {
       <img src= {userImage} alt="loading_Image"/>
     </div>
     <div className='app__navbar-user-name'>
-    <h3>{user.name}</h3>
+    <h3>{user.firstname + " " + user.lastname}</h3>
+    </div>
+    <div className='app__navbar-user-logout'>
+     <Link to="/"> <input type="text" value="Logout" onClick={onClick}/> </Link>
     </div>
     
   </nav>
